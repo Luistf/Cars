@@ -8,22 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		4B1977A820D84E0E000ECC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977A720D84E0E000ECC1B /* AppDelegate.swift */; };
-		4B1977AA20D84E0E000ECC1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977A920D84E0E000ECC1B /* ViewController.swift */; };
-		4B1977AD20D84E0E000ECC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977AB20D84E0E000ECC1B /* Main.storyboard */; };
-		4B1977AF20D84E0E000ECC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977AE20D84E0E000ECC1B /* Assets.xcassets */; };
 		4B1977B220D84E0E000ECC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977B020D84E0E000ECC1B /* LaunchScreen.storyboard */; };
-		4B1977BA20D84E1C000ECC1B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977B920D84E1C000ECC1B /* Test.swift */; };
+		4B1977CC20D84F39000ECC1B /* carros_classicos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977BD20D84F39000ECC1B /* carros_classicos.xml */; };
+		4B1977CD20D84F39000ECC1B /* carros_luxo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977BE20D84F39000ECC1B /* carros_luxo.xml */; };
+		4B1977CE20D84F39000ECC1B /* carros_esportivos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977BF20D84F39000ECC1B /* carros_esportivos.xml */; };
+		4B1977CF20D84F39000ECC1B /* carros_classicos.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C120D84F39000ECC1B /* carros_classicos.json */; };
+		4B1977D020D84F39000ECC1B /* carros_luxo.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C220D84F39000ECC1B /* carros_luxo.json */; };
+		4B1977D120D84F39000ECC1B /* carros_esportivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C320D84F39000ECC1B /* carros_esportivos.json */; };
+		4B1977D220D84F39000ECC1B /* tab_carros.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C520D84F39000ECC1B /* tab_carros.png */; };
+		4B1977D320D84F39000ECC1B /* tab_sobre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C620D84F39000ECC1B /* tab_sobre@2x.png */; };
+		4B1977D420D84F39000ECC1B /* mclaren.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C720D84F39000ECC1B /* mclaren.png */; };
+		4B1977D520D84F39000ECC1B /* ferrari_ff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C820D84F39000ECC1B /* ferrari_ff.png */; };
+		4B1977D620D84F39000ECC1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977C920D84F39000ECC1B /* Images.xcassets */; };
+		4B1977D720D84F39000ECC1B /* tab_sobre.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977CA20D84F39000ECC1B /* tab_sobre.png */; };
+		4B1977D820D84F39000ECC1B /* tab_carros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977CB20D84F39000ECC1B /* tab_carros@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B1977A420D84E0E000ECC1B /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1977A720D84E0E000ECC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B1977A920D84E0E000ECC1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B1977AC20D84E0E000ECC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4B1977AE20D84E0E000ECC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1977B120D84E0E000ECC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1977B320D84E0E000ECC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B1977B920D84E1C000ECC1B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		4B1977BD20D84F39000ECC1B /* carros_classicos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_classicos.xml; sourceTree = "<group>"; };
+		4B1977BE20D84F39000ECC1B /* carros_luxo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_luxo.xml; sourceTree = "<group>"; };
+		4B1977BF20D84F39000ECC1B /* carros_esportivos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_esportivos.xml; sourceTree = "<group>"; };
+		4B1977C120D84F39000ECC1B /* carros_classicos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_classicos.json; sourceTree = "<group>"; };
+		4B1977C220D84F39000ECC1B /* carros_luxo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_luxo.json; sourceTree = "<group>"; };
+		4B1977C320D84F39000ECC1B /* carros_esportivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_esportivos.json; sourceTree = "<group>"; };
+		4B1977C520D84F39000ECC1B /* tab_carros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_carros.png; sourceTree = "<group>"; };
+		4B1977C620D84F39000ECC1B /* tab_sobre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_sobre@2x.png"; sourceTree = "<group>"; };
+		4B1977C720D84F39000ECC1B /* mclaren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mclaren.png; sourceTree = "<group>"; };
+		4B1977C820D84F39000ECC1B /* ferrari_ff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ferrari_ff.png; sourceTree = "<group>"; };
+		4B1977C920D84F39000ECC1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B1977CA20D84F39000ECC1B /* tab_sobre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_sobre.png; sourceTree = "<group>"; };
+		4B1977CB20D84F39000ECC1B /* tab_carros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_carros@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		4B1977A620D84E0E000ECC1B /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				4B1977BB20D84F39000ECC1B /* Resources */,
 				4B1977A720D84E0E000ECC1B /* AppDelegate.swift */,
-				4B1977A920D84E0E000ECC1B /* ViewController.swift */,
-				4B1977AB20D84E0E000ECC1B /* Main.storyboard */,
-				4B1977AE20D84E0E000ECC1B /* Assets.xcassets */,
 				4B1977B020D84E0E000ECC1B /* LaunchScreen.storyboard */,
 				4B1977B320D84E0E000ECC1B /* Info.plist */,
-				4B1977B920D84E1C000ECC1B /* Test.swift */,
 			);
 			path = Cars;
+			sourceTree = "<group>";
+		};
+		4B1977BB20D84F39000ECC1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B1977BC20D84F39000ECC1B /* xml */,
+				4B1977C020D84F39000ECC1B /* json */,
+				4B1977C420D84F39000ECC1B /* Imagens */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B1977BC20D84F39000ECC1B /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				4B1977BD20D84F39000ECC1B /* carros_classicos.xml */,
+				4B1977BE20D84F39000ECC1B /* carros_luxo.xml */,
+				4B1977BF20D84F39000ECC1B /* carros_esportivos.xml */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		4B1977C020D84F39000ECC1B /* json */ = {
+			isa = PBXGroup;
+			children = (
+				4B1977C120D84F39000ECC1B /* carros_classicos.json */,
+				4B1977C220D84F39000ECC1B /* carros_luxo.json */,
+				4B1977C320D84F39000ECC1B /* carros_esportivos.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		4B1977C420D84F39000ECC1B /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				4B1977C520D84F39000ECC1B /* tab_carros.png */,
+				4B1977C620D84F39000ECC1B /* tab_sobre@2x.png */,
+				4B1977C720D84F39000ECC1B /* mclaren.png */,
+				4B1977C820D84F39000ECC1B /* ferrari_ff.png */,
+				4B1977C920D84F39000ECC1B /* Images.xcassets */,
+				4B1977CA20D84F39000ECC1B /* tab_sobre.png */,
+				4B1977CB20D84F39000ECC1B /* tab_carros@2x.png */,
+			);
+			path = Imagens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +184,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1977D420D84F39000ECC1B /* mclaren.png in Resources */,
+				4B1977CF20D84F39000ECC1B /* carros_classicos.json in Resources */,
+				4B1977D520D84F39000ECC1B /* ferrari_ff.png in Resources */,
+				4B1977D220D84F39000ECC1B /* tab_carros.png in Resources */,
+				4B1977CD20D84F39000ECC1B /* carros_luxo.xml in Resources */,
+				4B1977CC20D84F39000ECC1B /* carros_classicos.xml in Resources */,
+				4B1977D820D84F39000ECC1B /* tab_carros@2x.png in Resources */,
+				4B1977D320D84F39000ECC1B /* tab_sobre@2x.png in Resources */,
 				4B1977B220D84E0E000ECC1B /* LaunchScreen.storyboard in Resources */,
-				4B1977AF20D84E0E000ECC1B /* Assets.xcassets in Resources */,
-				4B1977AD20D84E0E000ECC1B /* Main.storyboard in Resources */,
+				4B1977CE20D84F39000ECC1B /* carros_esportivos.xml in Resources */,
+				4B1977D720D84F39000ECC1B /* tab_sobre.png in Resources */,
+				4B1977D620D84F39000ECC1B /* Images.xcassets in Resources */,
+				4B1977D120D84F39000ECC1B /* carros_esportivos.json in Resources */,
+				4B1977D020D84F39000ECC1B /* carros_luxo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1977AA20D84E0E000ECC1B /* ViewController.swift in Sources */,
 				4B1977A820D84E0E000ECC1B /* AppDelegate.swift in Sources */,
-				4B1977BA20D84E1C000ECC1B /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4B1977AB20D84E0E000ECC1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B1977AC20D84E0E000ECC1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B1977B020D84E0E000ECC1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
