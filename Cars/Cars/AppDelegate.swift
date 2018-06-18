@@ -18,7 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.backgroundColor = UIColor.white
         self.window!.makeKeyAndVisible()
-        // Override point for customization after application launch.
+        // create controllers
+        let listController = CarListViewController(nibName: "CarListViewController", bundle: nil)
+        let aboutController = AboutViewController(nibName: "AboutViewController", bundle: nil)
+        let nav1 = UINavigationController()
+        let nav2 = UINavigationController()
+        // insert two view controllers in navigations controllers
+        nav1.pushViewController(listController, animated: false)
+        nav2.pushViewController(aboutController, animated: false)
+        // create the TabBar
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [nav1, nav2]
+        nav1.tabBarItem.title = "Cars"
+        nav1.tabBarItem.image = UIImage(named: "tab_carros.png")
+        nav2.tabBarItem.title = "About"
+        nav2.tabBarItem.image = UIImage(named: "tab_sobre.png")
+        // configure the UITabBarController how the diretor view controller
+        self.window!.rootViewController = tabBarController
+        self.window!.makeKeyAndVisible()
         return true
     }
 
