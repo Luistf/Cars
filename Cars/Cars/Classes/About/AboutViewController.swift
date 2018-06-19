@@ -8,13 +8,22 @@
 
 import UIKit
 
+let URL_ABOUT = "http://www.livroiphone.com.br/carros/sobre.html"
 class AboutViewController: UIViewController {
 
+    @IBOutlet var webView : UIWebView!
+    @IBOutlet var progress : UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // title for navigation bar
         self.title = "About"
-        // Do any additional setup after loading the view.
+        // started animation the activity
+        self.progress.startAnimating()
+        // carries the URL
+        let url = URL(string: URL_ABOUT)
+        let request = URLRequest(url:url!)
+        self.webView.loadRequest(request)
     }
 
     override func didReceiveMemoryWarning() {

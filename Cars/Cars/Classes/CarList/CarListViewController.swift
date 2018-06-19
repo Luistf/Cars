@@ -14,7 +14,6 @@ class CarListViewController: UIViewController {
         super.viewDidLoad()
         // title for navigation bar
         self.title = "Cars"
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
