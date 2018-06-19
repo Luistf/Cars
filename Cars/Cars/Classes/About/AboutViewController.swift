@@ -8,7 +8,7 @@
 
 import UIKit
 
-let URL_ABOUT = "http://www.livroiphone.com.br/carros/sobre.html"
+let URL_ABOUT = "http://www.livroiphone.com.br/carros/sobre.htm"
 class AboutViewController: UIViewController {
 
     @IBOutlet var webView : UIWebView!
