@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarListViewController: UIViewController, UITableViewDataSource {
+class CarListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView : UITableView!
     
@@ -18,6 +18,7 @@ class CarListViewController: UIViewController, UITableViewDataSource {
         self.title = "Cars"
         // delegate
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         // this row is necessary for to use ReusableCellWithIdentifier
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
@@ -33,6 +34,12 @@ class CarListViewController: UIViewController, UITableViewDataSource {
         cell.textLabel!.text = "Car \(row)"
         cell.imageView!.image = UIImage(named: "ferrari_ff.png")
         return cell
+    }
+    
+    // execute method the row table
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        Alert.alert("Clicked on car \(row)", viewController: self)
     }
 
     override func didReceiveMemoryWarning() {

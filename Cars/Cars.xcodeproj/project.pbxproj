@@ -28,6 +28,7 @@
 		4B1977E720D85BA2000ECC1B /* CarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977E520D85BA2000ECC1B /* CarListViewController.xib */; };
 		4B1977EA20D85BB5000ECC1B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977E820D85BB5000ECC1B /* AboutViewController.swift */; };
 		4B1977EB20D85BB5000ECC1B /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977E920D85BB5000ECC1B /* AboutViewController.xib */; };
+		4B1977EF20DC6A4C000ECC1B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977EE20DC6A4C000ECC1B /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		4B1977E520D85BA2000ECC1B /* CarListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListViewController.xib; sourceTree = "<group>"; };
 		4B1977E820D85BB5000ECC1B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4B1977E920D85BB5000ECC1B /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		4B1977EE20DC6A4C000ECC1B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		4B1977DD20D85B02000ECC1B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B1977ED20DC6A30000ECC1B /* Utils */,
 				4B1977DF20D85B5E000ECC1B /* About */,
 				4B1977DE20D85B14000ECC1B /* CarList */,
 			);
@@ -166,6 +169,14 @@
 				4B1977E920D85BB5000ECC1B /* AboutViewController.xib */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		4B1977ED20DC6A30000ECC1B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4B1977EE20DC6A4C000ECC1B /* Alert.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				4B1977A820D84E0E000ECC1B /* AppDelegate.swift in Sources */,
 				4B1977E620D85BA2000ECC1B /* CarListViewController.swift in Sources */,
 				4B1977EA20D85BB5000ECC1B /* AboutViewController.swift in Sources */,
+				4B1977EF20DC6A4C000ECC1B /* Alert.swift in Sources */,
 				4B1977E220D85B8A000ECC1B /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
