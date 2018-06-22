@@ -45,7 +45,11 @@ class CarListViewController: UIViewController, UITableViewDataSource, UITableVie
         let row = indexPath.row
         // selected car
         let car = self.cars[row]
-        Alert.alert("Clicked on car: \(car.name)", viewController: self)
+        // create view controller for navigation for view details
+        let vc = DetailsCarViewController(nibName: "DetailsCarViewController", bundle: nil)
+        vc.car = car // copy object for attribute car create in class
+        self.navigationController!.pushViewController(vc, animated: true)
+//        Alert.alert("Clicked on car: \(car.name)", viewController: self)
     }
 
     override func didReceiveMemoryWarning() {
