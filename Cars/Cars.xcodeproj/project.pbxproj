@@ -29,6 +29,8 @@
 		4B1977EA20D85BB5000ECC1B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977E820D85BB5000ECC1B /* AboutViewController.swift */; };
 		4B1977EB20D85BB5000ECC1B /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977E920D85BB5000ECC1B /* AboutViewController.xib */; };
 		4B1977EF20DC6A4C000ECC1B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977EE20DC6A4C000ECC1B /* Alert.swift */; };
+		4B1977F220DC70ED000ECC1B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977F120DC70ED000ECC1B /* Car.swift */; };
+		4B1977F420DC7313000ECC1B /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977F320DC7313000ECC1B /* CarService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		4B1977E820D85BB5000ECC1B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4B1977E920D85BB5000ECC1B /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		4B1977EE20DC6A4C000ECC1B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		4B1977F120DC70ED000ECC1B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		4B1977F320DC7313000ECC1B /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 		4B1977DD20D85B02000ECC1B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B1977F020DC70D8000ECC1B /* Domain */,
 				4B1977ED20DC6A30000ECC1B /* Utils */,
 				4B1977DF20D85B5E000ECC1B /* About */,
 				4B1977DE20D85B14000ECC1B /* CarList */,
@@ -177,6 +182,15 @@
 				4B1977EE20DC6A4C000ECC1B /* Alert.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4B1977F020DC70D8000ECC1B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4B1977F120DC70ED000ECC1B /* Car.swift */,
+				4B1977F320DC7313000ECC1B /* CarService.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +280,8 @@
 			files = (
 				4B1977A820D84E0E000ECC1B /* AppDelegate.swift in Sources */,
 				4B1977E620D85BA2000ECC1B /* CarListViewController.swift in Sources */,
+				4B1977F420DC7313000ECC1B /* CarService.swift in Sources */,
+				4B1977F220DC70ED000ECC1B /* Car.swift in Sources */,
 				4B1977EA20D85BB5000ECC1B /* AboutViewController.swift in Sources */,
 				4B1977EF20DC6A4C000ECC1B /* Alert.swift in Sources */,
 				4B1977E220D85B8A000ECC1B /* DetailsViewController.swift in Sources */,
