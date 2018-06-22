@@ -16,7 +16,7 @@ class CarService {
         for i in 1...20 {
             let c = Car()
             c.name = "Ferrari " + String(i)
-            c.desc = "Desc Ferrari " + String(i)
+            c.desc = " Desc Ferrari carro " + String(i)
             c.url_photo = "ferrari_ff.png"
             // add car in array
             cars.append(c)

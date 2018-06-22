@@ -28,9 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // create the TabBar
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [nav1,nav2]
-        nav1.tabBarItem.title = "Cars"
+        nav1.tabBarItem.title = "Carros"
         nav1.tabBarItem.image = UIImage(named: "tab_carros.png")
-        nav2.tabBarItem.title = "About"
+        nav2.tabBarItem.title = "Sobre"
         nav2.tabBarItem.image = UIImage(named: "tab_sobre.png")
         // configure the UITabBarController how the diretor view controller
         self.window!.rootViewController = tabBarController

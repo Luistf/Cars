@@ -18,7 +18,7 @@ class AboutViewController: UIViewController, UIWebViewDelegate {
         super.viewDidAppear(animated)
         super.viewDidLoad()
         // title for navigation bar
-        self.title = "About"
+        self.title = "Sobre"
         // started animation the activity
         self.progress.startAnimating()
         // carries the URL

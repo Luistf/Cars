@@ -31,6 +31,8 @@
 		4B1977F420DC7313000ECC1B /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977F320DC7313000ECC1B /* CarService.swift */; };
 		4B1977F920DD4078000ECC1B /* DetailsCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977F720DD4078000ECC1B /* DetailsCarViewController.swift */; };
 		4B1977FA20DD4078000ECC1B /* DetailsCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977F820DD4078000ECC1B /* DetailsCarViewController.xib */; };
+		4B19780020DD8203000ECC1B /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977FF20DD8203000ECC1B /* CarCell.swift */; };
+		4B19780220DD8287000ECC1B /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B19780120DD8287000ECC1B /* CarCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		4B1977F320DC7313000ECC1B /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
 		4B1977F720DD4078000ECC1B /* DetailsCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCarViewController.swift; sourceTree = "<group>"; };
 		4B1977F820DD4078000ECC1B /* DetailsCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCarViewController.xib; sourceTree = "<group>"; };
+		4B1977FF20DD8203000ECC1B /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		4B19780120DD8287000ECC1B /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 		4B1977DE20D85B14000ECC1B /* CarList */ = {
 			isa = PBXGroup;
 			children = (
+				4B1977FC20DD804C000ECC1B /* Cell */,
 				4B1977E420D85BA2000ECC1B /* CarListViewController.swift */,
 				4B1977E520D85BA2000ECC1B /* CarListViewController.xib */,
 				4B1977F720DD4078000ECC1B /* DetailsCarViewController.swift */,
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4B1977EE20DC6A4C000ECC1B /* Alert.swift */,
+				4B1977FF20DD8203000ECC1B /* CarCell.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,6 +197,14 @@
 				4B1977F320DC7313000ECC1B /* CarService.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		4B1977FC20DD804C000ECC1B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4B19780120DD8287000ECC1B /* CarCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,7 @@
 				4B1977D620D84F39000ECC1B /* Images.xcassets in Resources */,
 				4B1977EB20D85BB5000ECC1B /* AboutViewController.xib in Resources */,
 				4B1977D120D84F39000ECC1B /* carros_esportivos.json in Resources */,
+				4B19780220DD8287000ECC1B /* CarCell.xib in Resources */,
 				4B1977D020D84F39000ECC1B /* carros_luxo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +296,7 @@
 				4B1977A820D84E0E000ECC1B /* AppDelegate.swift in Sources */,
 				4B1977E620D85BA2000ECC1B /* CarListViewController.swift in Sources */,
 				4B1977F420DC7313000ECC1B /* CarService.swift in Sources */,
+				4B19780020DD8203000ECC1B /* CarCell.swift in Sources */,
 				4B1977F220DC70ED000ECC1B /* Car.swift in Sources */,
 				4B1977EA20D85BB5000ECC1B /* AboutViewController.swift in Sources */,
 				4B1977EF20DC6A4C000ECC1B /* Alert.swift in Sources */,

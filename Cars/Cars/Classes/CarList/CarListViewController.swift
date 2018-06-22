@@ -16,13 +16,16 @@ class CarListViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // title for navigation bar
-        self.title = "Cars"
+        self.title = "Carros"
         // delegate
         self.tableView.dataSource = self
         self.tableView.delegate = self
         // this row is necessary for to use ReusableCellWithIdentifier
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.cars = CarService.getCars()
+        // registration tableview carcell
+        let xib = UINib(nibName: "CarCell", bundle: nil)
+        self.tableView.register(xib, forCellReuseIdentifier: "cell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,13 +33,13 @@ class CarListViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // create cell this row
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell")!
         let row = indexPath.row
-        // create object car type
         let car = self.cars[row]
-        cell.textLabel!.text = car.name
-        cell.imageView!.image = UIImage(named: car.url_photo)
+        // create cell this row
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! CarCell
+        cell.cellName.text = car.name
+        cell.cellDesc.text = car.desc
+        cell.cellImg.image = UIImage(named: car.url_photo)
         return cell
     }
     
