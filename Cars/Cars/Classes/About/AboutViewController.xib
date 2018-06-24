@@ -35,12 +35,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="d7W-R6-byl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Pl-c4-t6g"/>
-                <constraint firstItem="d7W-R6-byl" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="TMp-C6-BzO"/>
+                <constraint firstItem="d7W-R6-byl" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Obc-X6-jdZ"/>
                 <constraint firstItem="eIM-Xb-8Mu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZFk-vX-q55"/>
-                <constraint firstItem="d7W-R6-byl" firstAttribute="centerX" secondItem="eIM-Xb-8Mu" secondAttribute="centerX" id="f4C-ZC-gdB"/>
-                <constraint firstItem="d7W-R6-byl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hQN-vi-lAy"/>
-                <constraint firstAttribute="trailing" secondItem="d7W-R6-byl" secondAttribute="trailing" id="xNF-ZJ-14J"/>
+                <constraint firstItem="d7W-R6-byl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bdg-3i-bk0"/>
+                <constraint firstAttribute="trailing" secondItem="d7W-R6-byl" secondAttribute="trailing" id="ghF-1Z-eaE"/>
+                <constraint firstItem="d7W-R6-byl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hII-OT-L1P"/>
+                <constraint firstItem="d7W-R6-byl" firstAttribute="centerX" secondItem="eIM-Xb-8Mu" secondAttribute="centerX" id="pwb-ML-oV6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>

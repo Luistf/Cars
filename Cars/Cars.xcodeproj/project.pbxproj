@@ -33,6 +33,7 @@
 		4B1977FA20DD4078000ECC1B /* DetailsCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B1977F820DD4078000ECC1B /* DetailsCarViewController.xib */; };
 		4B19780020DD8203000ECC1B /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1977FF20DD8203000ECC1B /* CarCell.swift */; };
 		4B19780220DD8287000ECC1B /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B19780120DD8287000ECC1B /* CarCell.xib */; };
+		4B19780520DF1311000ECC1B /* XMLCarParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19780420DF1311000ECC1B /* XMLCarParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		4B1977F820DD4078000ECC1B /* DetailsCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCarViewController.xib; sourceTree = "<group>"; };
 		4B1977FF20DD8203000ECC1B /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		4B19780120DD8287000ECC1B /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		4B19780420DF1311000ECC1B /* XMLCarParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLCarParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 		4B1977F020DC70D8000ECC1B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				4B19780320DF12EF000ECC1B /* XML-SAX */,
 				4B1977F120DC70ED000ECC1B /* Car.swift */,
 				4B1977F320DC7313000ECC1B /* CarService.swift */,
 			);
@@ -205,6 +208,14 @@
 				4B19780120DD8287000ECC1B /* CarCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		4B19780320DF12EF000ECC1B /* XML-SAX */ = {
+			isa = PBXGroup;
+			children = (
+				4B19780420DF1311000ECC1B /* XMLCarParser.swift */,
+			);
+			path = "XML-SAX";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				4B1977A820D84E0E000ECC1B /* AppDelegate.swift in Sources */,
 				4B1977E620D85BA2000ECC1B /* CarListViewController.swift in Sources */,
 				4B1977F420DC7313000ECC1B /* CarService.swift in Sources */,
+				4B19780520DF1311000ECC1B /* XMLCarParser.swift in Sources */,
 				4B19780020DD8203000ECC1B /* CarCell.swift in Sources */,
 				4B1977F220DC70ED000ECC1B /* Car.swift in Sources */,
 				4B1977EA20D85BB5000ECC1B /* AboutViewController.swift in Sources */,

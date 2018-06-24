@@ -31,10 +31,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="5Ch-rb-ae3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0CE-0a-gKs"/>
-                <constraint firstItem="5Ch-rb-ae3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LCw-Jj-tnk"/>
-                <constraint firstItem="5Ch-rb-ae3" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="YvD-D5-3fy"/>
-                <constraint firstAttribute="trailing" secondItem="5Ch-rb-ae3" secondAttribute="trailing" id="gY9-Tp-XJj"/>
+                <constraint firstItem="5Ch-rb-ae3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7FI-VH-28T"/>
+                <constraint firstItem="5Ch-rb-ae3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="82s-be-Mri"/>
+                <constraint firstAttribute="trailing" secondItem="5Ch-rb-ae3" secondAttribute="trailing" id="eXS-Hx-fCk"/>
+                <constraint firstItem="5Ch-rb-ae3" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="hqk-0z-2Wq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
