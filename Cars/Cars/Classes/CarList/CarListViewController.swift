@@ -26,6 +26,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, UITableVie
         // registration tableview carcell
         let xib = UINib(nibName: "CarCell", bundle: nil)
         self.tableView.register(xib, forCellReuseIdentifier: "cell")
+        self.cars = CarService.getCarsByTypeFromFile("esportivos")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
