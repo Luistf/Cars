@@ -8,39 +8,23 @@
 
 import Foundation
 
-extension String {
-    func trim() -> String {
-        let trimmedString = self.trimmingCharacters(in: .whitespaces)
-        return trimmedString
-    }
-    
-    func replace(_of: String, with: String) -> String {
-        let s = self.replacingOccurrences(of: "\n", with: "")
-        return s
-    }
-    
-    func url() -> URL {
-        return URL(string: self)!
-    }
-}
-
-class XMLCarParser: NSObject, XMLParserDelegate {
+class XMLCarParser :NSObject, XMLParserDelegate {
     // car list
     var cars : Array<Car> = []
-    // variable auxialiaries for parser
+    // variables auxiliaries
     var tempString : String = ""
-    var car: Car?
+    var car : Car?
     
-    func parse(_parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributesDict: [String : String]) {
         if("carro" == elementName) {
-            // tag <car> found create a new object car
+            // tag <carro> found, so create a new car object
             car = Car()
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if("carro" == elementName) {
-            // tag of end </car> found, means and xml
+            // tag </name> found, so and xml
             return
         }
         if("carro" == elementName) {
@@ -49,16 +33,14 @@ class XMLCarParser: NSObject, XMLParserDelegate {
             car = nil
             return
         }
-        // if isn`t the tag <carro> can be the tag <nome>, <desc> etc.
-        // copy the values of xml for car object
-        // if tags found with the same name @property the value is copied
+        // if isn`t tag <carro> can be tags <nome>, <desc> etc...
         if("carro" != nil) {
-            // copy the car attributes
-            if("carro" == elementName) {
+            // copy attributes of car
+            if("nome" == elementName) {
                 car!.name = tempString
             } else if("desc" == elementName) {
                 car!.desc = tempString
-            } else if("url_foto" == elementName) {
+            }else if("url_foto" == elementName) {
                 car!.url_photo = tempString
             } else if("url_info" == elementName) {
                 car!.url_info = tempString
@@ -74,11 +56,28 @@ class XMLCarParser: NSObject, XMLParserDelegate {
     }
     
     func parser(_ parser: XMLParser, foundCharacters string: String) {
-        // remove \n\t in architect
-        var s = string.replace(_of: "\n", with: "")
-        s = s.replace(_of: "\t", with: "")
+        // remove \n and \t in archive
+        var s = string.replace("\n", with: "")
+        s = s.replace("\t", with: "")
         s = s.trim()
         // does append string
         tempString += s
     }
 }
+
+extension String {
+    func trim() -> String {
+        let trimmedString = self.trimmingCharacters(in: .whitespaces)
+        return trimmedString
+    }
+    
+    func replace(_ of: String, with: String) -> String {
+        let s = self.replacingOccurrences(of: "\n", with: "")
+        return s
+    }
+    
+    func url() -> URL {
+        return URL(string: self)!
+    }
+}
+

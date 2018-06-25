@@ -22,7 +22,7 @@ class CarListViewController: UIViewController, UITableViewDataSource, UITableVie
         self.tableView.delegate = self
         // this row is necessary for to use ReusableCellWithIdentifier
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        self.cars = CarService.getCars()
+//        self.cars = CarService.getCars()
         // registration tableview carcell
         let xib = UINib(nibName: "CarCell", bundle: nil)
         self.tableView.register(xib, forCellReuseIdentifier: "cell")
