@@ -9,39 +9,42 @@
 import Foundation
 
 class CarService {
-    
-        // search cars by type sports, classics, lux
-        // static method
-        class func getCarsByTypeFromFile(_ tipo: String) -> Array<Car> {
-            let file = "carros_" + tipo
-            print(file)
-            let path = Bundle.main.path(forResource: file, ofType: "xml")
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path!))
-            let cars = parserXML_SAX(data!)
-            return cars
-        }
-
-    // parser xml with SAX
+    // search cars type
     // static method
-    class func parserXML_SAX(_ data: Data) -> Array<Car> {
-        if(data.count == 0) {
-            return [] //empty array
-        }
-        var cars : Array<Car> = []
-        let xmlParser = XMLParser(data:data)
-        let carsParser = XMLCarParser()
-        xmlParser.delegate = carsParser
-        let ok = xmlParser.parse()
-        if(ok) {
-            //did parser successfully
-            cars = carsParser.cars
-            let count = cars.count
-            print("Parser, found \(count) cars")
-        } else {
-            print("Error in parser")
-        }
-        // return cars list
+    class func getCarsByTypeFromFile(_ tipo: String) -> Array<Car> {
+        let file = "carros_" + tipo
+        let path = Bundle.main.path(forResource: file, ofType: "json")
+        let data = try? Data(contentsOf: URL(fileURLWithPath: path!))
+        // does parse
+        let cars = parserJson(data!)
         return cars
     }
     
+    // Parser Json
+    // static method
+    class func parserJson(_ data: Data) -> Array<Car> {
+        var cars : Array<Car> = [] // array empty
+        // does reading json
+        do {
+            // convert json in NSArray
+            let arrayCars = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
+            // array cars
+            for obj in arrayCars {
+                let dict = obj as! NSDictionary
+                let car = Car()
+                car.name = dict["nome"] as! String
+                car.desc = dict["desc"] as! String
+                car.url_info = dict["url_info"] as! String
+                car.url_photo = dict["url_foto"] as! String
+                car.url_video = dict["url_video"] as! String
+                car.latitude = dict["latitude"] as! String
+                car.longitude = dict["longitude"] as! String
+                cars.append(car)
+            }
+        } catch let error as NSError {
+            print("Error reading Json \(error)")
+        }
+        // return car list
+        return cars
+    }
 }
